@@ -1,0 +1,12 @@
+.lightGray {
+  background-color: #b83636; /* Light gray color */
+}
+
+.white {
+  background-color: #ffffff; /* White color */
+}
+
+.table-cell {
+  width: (100% / 7); /* Set equal width for each column (100% / 7 days) */
+  box-sizing: border-box;
+}

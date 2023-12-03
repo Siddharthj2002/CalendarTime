@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.left-panel {
+  width: 11%;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.main-content {
+  width: 89%;
+  padding: 20px;
+}
+
+.header {
+  font-family: 'Inter';
+  font-weight: 400;
+  display: flex;
+  font-size: 2.5rem;
+}
+
+.button {
+  width: 120px;
+  height: 120px;
+  border-radius: 20%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover {
+  background: rgb(224, 224, 224);
+}
+
+.button:focus {
+  background: #F76E72;
+}
+
+.button img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  margin-bottom: 6px;
+}
+
+.user-details {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.user-details span {
+  display: block;
+  font-size: medium;
+  font-weight: 600;
+}
