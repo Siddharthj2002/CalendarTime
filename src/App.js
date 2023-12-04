@@ -1,16 +1,18 @@
 // App.js
-import React from 'react';
-import LeftPanel from './components/Calendar/LeftPanel.js';
-import Header from './components/Calendar/Header.js';
-import CalendarGrid from './components/Calendar/CalendarGrid.js';
+import React, { useState } from 'react';
+import LeftPanel from './components/LeftPanel.js';
+import Header from './components/Header.js';
+
+import ContentGrid from './components/ContentGrid.js';
 
 const App = () => {
+  const [selectedPage, setSelectedPage] = useState(2);
   return (
     <div className="app">
-      <LeftPanel />
+      <LeftPanel selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <div className="main-content">
         <Header />
-        <CalendarGrid />
+        <ContentGrid selectedPage={selectedPage} />
       </div>
     </div>
   );

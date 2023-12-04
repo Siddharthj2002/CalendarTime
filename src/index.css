@@ -21,9 +21,9 @@ code {
 }
 
 .left-panel {
-  width: 11%;
+  width: 10%;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 20px 15px;
 }
 
 .button-container {
@@ -41,11 +41,13 @@ code {
 }
 
 .main-content {
-  width: 89%;
+  width: 90%;
   padding: 20px;
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   font-family: 'Inter';
   font-weight: 400;
   display: flex;
@@ -53,25 +55,31 @@ code {
 }
 
 .button {
-  width: 120px;
-  height: 120px;
+  font-family: 'Inter';
+  width: 130px;
+  height: 130px;
   border-radius: 20%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  color: #6d6d6d;
+  margin-bottom: 23px;
 }
 
-.button:hover {
+button:hover {
   background: rgb(224, 224, 224);
 }
 
-.button:focus {
+.button:not(#monthlyCalendarBtn):focus {
+  color: #fff;
   background: #F76E72;
 }
+
 
 .button img {
   width: 50px;
   height: 50px;
   border-radius: 10%;
   margin-bottom: 6px;
+  display: inline-block;
 }
 
 .user-details {
@@ -83,4 +91,88 @@ code {
   display: block;
   font-size: medium;
   font-weight: 600;
+}
+
+.monthly-calendar-popup {
+  position: absolute;
+  top: 54%;
+  z-index: 1;
+}
+
+
+/**
+  Notifiction Bar 
+*/
+.notification-bar {
+  width: 35%; /* Adjust the width of the notification bar as needed */
+  height: 5rem; /* Adjust the height of the notification bar as needed */
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Modified box shadow to exclude top */
+  border-radius: 8px; /* Adjust border-radius as needed */
+  margin-right: 10px; /* Add margin to separate the notification bar from the toggle buttons */
+  display: flex;
+  align-items: center;
+}
+
+.gradient-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #3498db;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+#notification {
+  font-size: small;
+}
+
+/* Add this style to your CSS file or style section */
+.read-more {
+  color: #08C932; /* Set your desired text color */
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.read-more:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle,
+.create-event {
+  margin-left: 10px; 
+}
+
+/**
+  Calendar Grid 
+*/
+.calendar-grid {
+  background-color: #b0575a;
+}
+
+.create-event {
+  font-family: 'Inter';
+  color: #fff;
+  font-size: large;
+  background-color: #F76E72;
+  border: none;
+  padding: 10px 17px;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.create-event:hover {
+  background: rgb(224, 224, 224);
+  color: #6d6d6d;
 }

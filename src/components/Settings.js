@@ -3,8 +3,9 @@ import React from 'react';
 
 const CalendarGrid = () => {
   return (
-    <div className="calendar-grid">
+    <div className="settings">
       {/* Render time slots and days here */}
+      SETTINGS
     </div>
   );
 };
